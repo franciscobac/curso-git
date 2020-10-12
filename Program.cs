@@ -5,6 +5,7 @@ namespace C_sharp {
         static void Main(string[] args) {
             Console.WriteLine("Olá Mundo");
             System.Console.WriteLine("Bom dia");
+            Console.WriteLine("Como você está hoje?");
         }
     }
 }
