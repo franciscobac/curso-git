@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExerciciosCursoCSharp.Entities.Exceptions
+namespace ExerciciosCursoCSharp.Entities.Exception
 {
-    class DomainException : ApplicationException
+    public class DomainException : ApplicationException
     {
         public DomainException(string message) : base(message)
         {
         }
-
     }
 }
