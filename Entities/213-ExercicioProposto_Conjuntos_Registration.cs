@@ -6,24 +6,28 @@ using System.Threading.Tasks;
 
 namespace ExerciciosCursoCSharp.Entities
 {
-    class LogRecord
+    class Registration
     {
-        public string Username { get; set; }
-        public DateTime Instant { get; set; }
+        public int Id { get; set; }
+
+        public Registration(int id)
+        {
+            Id = id;
+        }
 
         public override int GetHashCode()
         {
-            return Username.GetHashCode();
+            return Id.GetHashCode();
         }
 
         public override bool Equals(object obj)
         {
-            if (!(obj is LogRecord))
+            if (!(obj is Registration))
             {
                 return false;
             }
-            LogRecord other = obj as LogRecord;
-            return Username.Equals(other.Username);
+            Registration other = obj as Registration;
+            return Id.Equals(other.Id);
         }
     }
 }
