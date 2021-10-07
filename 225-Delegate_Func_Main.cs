@@ -17,12 +17,11 @@ namespace ExerciciosCursoCSharp
             list.Add(new Product("Tablet", 350.50));
             list.Add(new Product("HD Case", 80.90));
 
+            List<string> result = list.Select(p => p.Name.ToUpper()).ToList();
 
-            list.ForEach(p => { p.Price += p.Price * 0.1; });
-
-            foreach (Product p in list)
+            foreach (string s in result)
             {
-                Console.WriteLine(p);
+                Console.WriteLine(s);
             }
         }
     }
