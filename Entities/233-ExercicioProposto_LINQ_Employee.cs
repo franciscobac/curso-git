@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace ExerciciosCursoCSharp.Entities
 {
-    class Product
+    class Employee
     {
         public string Name { get; set; }
-        public double Price { get; set; }
+        public string Email { get; set; }
+        public double Salary { get; set; }
 
-        public Product(string name, double price)
+        public Employee(string name, string email, double salary)
         {
             Name = name;
-            Price = price;
+            Email = email;
+            Salary = salary;
         }
-
-
     }
 }
